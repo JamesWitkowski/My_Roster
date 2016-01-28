@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Link bootstrap in index.html
+        Link jQuery in index.html-->
+    <link rel="stylesheet" href="assets/site.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    
+</head>
+<body>
+    
+    <!--Wrap the panel in a div with the class "container".-->
+    
+    <div class="container">
+        
+        <!--Add a panel with a header that says "My NFL Roster"-->
+        
+        <div class="panel panel-success">
+          <div class="panel-body">
+            My Fictional NFL Roster
+          </div>          
+        </div> 
+    </div>
+    
+    <!--Inside the body, create 2 child divs, one with the class "player-roster" 
+        and one with the class "player-form"-->
+        
+        <div class="player-roster">
+            
+            <!--Inside the player-roster div, add another dive with the class "player-card"
+                Set the player-card class to "display:inline-block" and add a "1px solid black" border
+                Add an image to the player card
+                display the player's name, display the player's position, display the player's number-->
+                
+            <!--<div class="player-card" display="inline-block" border="1px solid black">
+            <p><button type="submit" class="btn btn-danger" role="button">Cut</button></p>
+            <img src = "http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" id="player-picture" class="img-thumbnail">
+            <div>
+                 Player Name: <span id="fName"></span>
+            </div>
+            <div>   
+                 Position: <span id="pos"></span>
+            </div>
+            <div>
+                 Number: <span id="num"></span>        
+            </div> -->
+        </div>
+        
+        <div class="player-form"> 
+            
+             <!--!-Create a form inside the "player-form" div
+                Add an input field for Player Name, Position, and Number--->
+                
+            <form class="form-inline" id="new-player">
+                <div class="form-group">
+                     <label >Player Name</label>
+                     <input type="text" class="form-control" name="playerName" placeholder="Player Name" value="">
+                </div>
+                <div class="form-group">
+                     <label >Position</label>
+                     <input type="text" class="form-control" name="playerPosition" placeholder="Position" value = "">
+                </div>
+                <div class="form-group">
+                     <label >Jersey Number</label>
+                     <input type="" class="form-control" name="jerseyNumber" placeholder="Jersey Number" value="">
+                </div>
+                
+                <!--When the add button is pressed, it should automatically add a player to the Roster-->
+                
+                <button type="submit" id="add-player-button" class="btn btn-default">Add Player</button>
+            </form>
+        </div>
+    
+    <script src="assets/scripts/jquery.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    
+</body>
+   
+    
+</html>

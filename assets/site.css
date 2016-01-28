@@ -13,6 +13,7 @@
 
 .panel-body{
     text-align: center;
+    font-style: bold;
     font-size: 25px;
     color: blue;
 }
@@ -27,3 +28,12 @@
 label{
     font-size: 18px;
 }
+html{
+    background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdJ2CjPiBx3kepyJsnPyB5qQYBheJHcHoyP6nF6J7sb0Xqaep8") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
